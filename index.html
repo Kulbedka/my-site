@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digital Creator | Links</title>
 
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -13,14 +12,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<!--
-  Темы:
-  theme-midnight  — темная фиолетовая
-  theme-sunset    — оранжево-розовая
-  theme-cyberpunk — черная неоновая
-
-  Чтобы сменить тему, поменяй класс у body.
--->
 <body class="theme-midnight">
   <main class="card">
     <div class="avatar">
@@ -39,6 +30,11 @@
       <a href="https://wa.me/00000000000" class="link-button" target="_blank">WhatsApp</a>
       <a href="https://youtube.com/@your_channel" class="link-button" target="_blank">YouTube</a>
       <a href="mailto:hello@example.com" class="link-button">Заказать сайт</a>
+      
+      <div class="extra-links">
+        <a href="https://boosty.to/antondesigndev" class="mini-button" target="_blank">🚀 Boosty</a>
+        <a href="https://github.com/Kulbedka" class="mini-button" target="_blank">💻 GitHub</a>
+      </div>
     </section>
 
     <footer class="socials" aria-label="Социальные сети">
@@ -48,11 +44,13 @@
       <a href="https://linkedin.com/in/your_profile" target="_blank">IN</a>
     </footer>
   </main>
-    <button id="share-btn" class="share-button">
-        <span>Поделиться профилем</span>
-    </button>
 
-    <div id="toast" class="toast">Ссылка скопирована!</div>
+  <button id="share-btn" class="share-button">
+    <span>Поделиться профилем</span>
+  </button>
+
+  <div id="toast" class="toast">Ссылка скопирована!</div>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
