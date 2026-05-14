@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Digital Creator | Links</title>
+  <title>Anton Digital | Links</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +15,7 @@
 <body class="theme-midnight">
   <main class="card">
     <div class="avatar">
-      <img src="assets/avatar.svg" alt="Аватар" />
+      <img src="assets/avatar.svg" alt="Аватар Anton Digital" />
     </div>
 
     <p class="eyebrow">Digital Creator</p>
@@ -25,31 +25,62 @@
     </p>
 
     <section class="links" aria-label="Основные ссылки">
-      <a href="https://t.me/your_username" class="link-button" target="_blank">Telegram</a>
-      <a href="https://your-portfolio.com" class="link-button" target="_blank">Портфолио</a>
-      <a href="https://wa.me/00000000000" class="link-button" target="_blank">WhatsApp</a>
-      <a href="https://youtube.com/@your_channel" class="link-button" target="_blank">YouTube</a>
+      <a href="https://t.me/your_username" class="link-button" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <a href="#portfolio-grid" id="portfolio-btn" class="link-button" aria-controls="portfolio-grid" aria-expanded="false">Портфолио</a>
+      <a href="https://wa.me/00000000000" class="link-button" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="https://youtube.com/@your_channel" class="link-button" target="_blank" rel="noopener noreferrer">YouTube</a>
       <a href="mailto:hello@example.com" class="link-button">Заказать сайт</a>
-      
+
       <div class="extra-links">
-        <a href="https://boosty.to/antondesigndev" class="mini-button" target="_blank">🚀 Boosty</a>
-        <a href="https://github.com/Kulbedka" class="mini-button" target="_blank">💻 GitHub</a>
+        <a href="https://boosty.to/antondesigndev" class="mini-button" target="_blank" rel="noopener noreferrer">🚀 Boosty</a>
+        <a href="https://github.com/Kulbedka" class="mini-button" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
       </div>
     </section>
 
     <footer class="socials" aria-label="Социальные сети">
-      <a href="https://t.me/your_username" target="_blank">TG</a>
-      <a href="https://instagram.com/your_username" target="_blank">IG</a>
-      <a href="https://youtube.com/@your_channel" target="_blank">YT</a>
-      <a href="https://linkedin.com/in/your_profile" target="_blank">IN</a>
+      <a href="https://t.me/your_username" target="_blank" rel="noopener noreferrer" aria-label="Telegram">TG</a>
+      <a href="https://instagram.com/your_username" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+      <a href="https://youtube.com/@your_channel" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+      <a href="https://linkedin.com/in/your_profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">IN</a>
     </footer>
   </main>
+  <section id="portfolio-grid" class="portfolio-grid" aria-hidden="true">
+    <h2 class="portfolio-title">Мои проекты</h2>
+    <div class="grid-container">
+      <div class="project-card">
+        <div class="project-img" style="background: linear-gradient(45deg, #6a11cb, #2575fc);">
+          <span class="project-icon" aria-hidden="true">📅</span>
+        </div>
+        <h3>Focus Dash</h3>
+        <p>Умный таск-менеджер для продуктивности</p>
+        <a href="https://github.com/Kulbedka" class="project-link" target="_blank" rel="noopener noreferrer">Открыть проект</a>
+      </div>
 
-  <button id="share-btn" class="share-button">
+      <div class="project-card">
+        <div class="project-img" style="background: linear-gradient(45deg, #ff9a9e, #fad0c4);">
+          <span class="project-icon" aria-hidden="true">🪪</span>
+        </div>
+        <h3>Glass Card</h3>
+        <p>Сайт-визитка в стиле Glassmorphism</p>
+        <a href="https://github.com/Kulbedka" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img" style="background: linear-gradient(45deg, #a1c4fd, #c2e9fb);">
+          <span class="project-icon" aria-hidden="true">🚀</span>
+        </div>
+        <h3>Next Project</h3>
+        <p>Здесь скоро появится новый крутой проект</p>
+        <span class="status-badge">В разработке</span>
+      </div>
+    </div>
+  </section>
+
+  <button id="share-btn" class="share-button" type="button">
     <span>Поделиться профилем</span>
   </button>
 
-  <div id="toast" class="toast">Ссылка скопирована!</div>
+  <div id="toast" class="toast" role="status" aria-live="polite">Ссылка скопирована!</div>
 
   <script src="script.js"></script>
 </body>
